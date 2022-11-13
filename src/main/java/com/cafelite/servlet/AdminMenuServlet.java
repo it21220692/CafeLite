@@ -20,7 +20,7 @@ import com.cafelite.repository.MenuRepository;
 
 @MultipartConfig(maxFileSize = 16177215)
 @WebServlet("/admin/*")
-public class AdminMenuServlet extends HttpServlet { //in
+public class AdminMenuServlet extends HttpServlet { //inheritance
 	// number that will help the JVM to identify the state of an object when it reads the state of the object from a file
 	private static final long serialVersionUID = 1L;
 	private MenuRepository menuRepository;
@@ -141,4 +141,5 @@ public class AdminMenuServlet extends HttpServlet { //in
 			throws ServletException, IOException {
 		doGet(request, response);
 	}
+
 }
